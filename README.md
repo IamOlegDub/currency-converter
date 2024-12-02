@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Currency Converter App 🌍💱
 
-## Getting Started
+This is a **modern, responsive, and user-friendly currency converter application** built using **Next.js**, **React**, and **Tailwind CSS**. The app allows users to convert currencies in real-time, leveraging live exchange rate data.
 
-First, run the development server:
+## Features ✨
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+-   **Real-Time Conversion**: Automatically updates the converted value as you type or select different currencies.
+-   **Customizable Interface**: Beautiful, gradient-enhanced design with smooth animations.
+-   **Responsive Design**: Works seamlessly on all devices, from desktops to smartphones.
+-   **Optimized Performance**: Utilizes server-side data fetching and caching for efficiency.
+-   **Accessibility**: Includes keyboard and screen reader support for inclusive user experience.
+
+---
+
+## Tech Stack 🛠️
+
+-   **Framework**: [Next.js](https://nextjs.org/) (v15.0.3)
+-   **Frontend**: [React](https://reactjs.org/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+-   **API Requests**: [Axios](https://axios-http.com/)
+-   **Live Exchange Rates**: Powered by a mock API for demonstration purposes.
+
+---
+
+## Installation 🚀
+
+1. **Clone the Repository**:
+
+    ```bash
+    git clone https://github.com/your-username/currency-converter.git
+    cd currency-converter
+    ```
+
+2. **Install Dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+3. **Run the Application**:
+
+    ```bash
+    npm run dev
+    ```
+
+4. **Visit the App**:
+   Open your browser and navigate to `http://localhost:3000`.
+
+---
+
+## Usage 🧑‍💻
+
+1. **Select Currencies**:
+
+    - Choose the base currency (e.g., USD).
+    - Select the target currency (e.g., EUR).
+
+2. **Enter Amount**:
+
+    - Input the amount to be converted.
+
+3. **Automatic Updates**:
+    - The converted amount is calculated and displayed in real-time.
+
+---
+
+## File Structure 🗂️
+
+```
+├── components/
+│   ├── Converter.tsx        # Main currency converter component
+│   ├── Header.tsx           # Header with app title and live rates
+│   ├── RateBlock.tsx        # Styled block for exchange rates
+│   ├── TheInput.tsx         # Custom input component
+│   ├── TheSelect.tsx        # Custom dropdown/select component
+│   ├── SkeletonRateString.tsx # Loading skeleton for rates
+├── pages/
+│   ├── index.tsx            # Home page rendering the app
+├── public/
+│   ├── logo.png             # App logo
+├── styles/
+│   ├── globals.css          # Global styles
+├── utils/
+│   ├── api.ts               # API logic for fetching exchange rates
+├── tailwind.config.ts       # Tailwind CSS configuration
+├── next.config.js           # Next.js configuration
+├── package.json             # Dependencies and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features in Detail 📖
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Header
 
-## Learn More
+-   Displays the application logo and title.
+-   Shows live exchange rates for **USD** and **EUR** against **UAH**.
 
-To learn more about Next.js, take a look at the following resources:
+### Converter
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   Two customizable input fields to enter amounts.
+-   Custom dropdown menus to select currencies with animations and intuitive UX.
+-   Automatic recalculations based on the last edited input field and selected currencies.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### Developed By:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   **[Oleg Dub](http://olegdub.web.app/)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Enjoy converting currencies effortlessly! 🎉
+# currency-converter
