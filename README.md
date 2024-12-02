@@ -28,7 +28,7 @@ This is a **modern, responsive, and user-friendly currency converter application
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/your-username/currency-converter.git
+    git clone https://github.com/IamOlegDub/currency-converter
     cd currency-converter
     ```
 
@@ -45,7 +45,7 @@ This is a **modern, responsive, and user-friendly currency converter application
     ```
 
 4. **Visit the App**:
-   Open your browser and navigate to `http://localhost:3000`.
+   Open your browser and navigate to `https://currency-converter-nine-jet.vercel.app/`.
 
 ---
 
@@ -110,4 +110,5 @@ This is a **modern, responsive, and user-friendly currency converter application
 -   **[Oleg Dub](http://olegdub.web.app/)**
 
 Enjoy converting currencies effortlessly! 🎉
+
 # currency-converter
