@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
-import { fetchExchangeRates } from '@/utils/api';
+import { fetchExchangeRates } from '@/utils/api/api';
 import { Karla } from 'next/font/google';
 
 export const metadata: Metadata = {

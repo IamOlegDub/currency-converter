@@ -13,6 +13,7 @@ const TheInput: FC<TheInputProps> = ({
 }) => {
     return (
         <input
+            type="string"
             value={amount}
             onChange={handleAmountChange}
             className="p-4 rounded-3xl flex-1 bg-gray-100 border outline-none border-gray-200

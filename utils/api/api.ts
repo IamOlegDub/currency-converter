@@ -1,8 +1,5 @@
+import { ExchangeRates } from '@/utils/shared/types';
 import axios from 'axios';
-
-export interface ExchangeRates {
-    [currencyCode: string]: number;
-}
 
 const BASE_API_URL =
     'https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies';
