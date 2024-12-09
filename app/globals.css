@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Style child when navigate to parent */
+/* child styling when navigate to parent by "tabing" */
 .navigated:focus-within .focused {
     --tw-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15), -4px -4px 12px white,
         inset 6px 6px 12px rgba(0, 0, 0, 0.1),

@@ -69,23 +69,33 @@ This is a **modern, responsive, and user-friendly currency converter application
 
 ```
 ├── components/
-│   ├── Converter.tsx        # Main currency converter component
-│   ├── Header.tsx           # Header with app title and live rates
-│   ├── RateBlock.tsx        # Styled block for exchange rates
-│   ├── TheInput.tsx         # Custom input component
-│   ├── TheSelect.tsx        # Custom dropdown/select component
-│   ├── SkeletonRateString.tsx # Loading skeleton for rates
-├── pages/
-│   ├── index.tsx            # Home page rendering the app
+│   ├── Converter.tsx         # Main currency converter component
+│   ├── Header.tsx            # Header with app title and live rates
+│   ├── HeaderDeco.tsx        # Decorative cycles for header styling
+│   ├── RateBlock.tsx         # Styled block for exchange rates
+│   ├── TheInput.tsx          # Custom input component for entering amounts
+│   ├── TheSelect.tsx         # Custom dropdown/select component for currency selection
+│   ├── SkeletonRateBlock.tsx # Loading skeleton for rates displayed while fetching
+├── app/
+│   ├── page.tsx              # Home page rendering the app's main components
+│   ├── globals.css           # Global CSS styles for the entire app
+│   ├── layout.tsx            # Root layout for app-wide structure and metadata
+│   ├── favicon.ico           # Favicon for the application
+├── hooks/
+│   ├── useExchangeRates.ts   # Custom hook for fetching and managing exchange rates
+│   ├── useOutsideClick.ts    # Hook to handle clicks outside an element (e.g., dropdown)
 ├── public/
-│   ├── logo.png             # App logo
-├── styles/
-│   ├── globals.css          # Global styles
+│   ├── logo.png              # Logo image used in the app header
 ├── utils/
-│   ├── api.ts               # API logic for fetching exchange rates
-├── tailwind.config.ts       # Tailwind CSS configuration
-├── next.config.js           # Next.js configuration
-├── package.json             # Dependencies and scripts
+│    ├── api/
+│       ├── api.ts            # API logic for fetching exchange rates from external services
+│    ├── shared/
+│       ├── constants.ts      # Shared constants for currencies and other configurations
+│       ├── types.ts          # Shared TypeScript types and interfaces for the app
+├── tailwind.config.ts        # Tailwind CSS configuration file for theming and customization
+├── next.config.js            # Next.js configuration for app-level settings
+├── package.json              # Dependencies and scripts for the project
+
 ```
 
 ---
