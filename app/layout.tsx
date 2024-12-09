@@ -8,14 +8,15 @@ export const metadata: Metadata = {
     title: 'CC | Currency Converter',
     description: 'Effortless currency conversions.',
     openGraph: {
+        type: 'website',
         title: 'CC | Currency Converter',
         description: 'Effortless currency conversions.',
         url: 'https://currency-converter-nine-jet.vercel.app/',
         images: [
             {
                 url: '/preview-image.png',
-                width: 1060,
-                height: 858,
+                width: 1200,
+                height: 630,
                 alt: 'Preview of Currency Converter app',
             },
         ],
