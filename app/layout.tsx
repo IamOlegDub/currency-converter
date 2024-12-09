@@ -7,6 +7,20 @@ import { Karla } from 'next/font/google';
 export const metadata: Metadata = {
     title: 'CC | Currency Converter',
     description: 'Effortless currency conversions.',
+    openGraph: {
+        title: 'CC | Currency Converter',
+        description: 'Effortless currency conversions.',
+        url: 'https://currency-converter-nine-jet.vercel.app/',
+        images: [
+            {
+                url: '/preview-image.png',
+                width: 1060,
+                height: 858,
+                alt: 'Preview of Currency Converter app',
+            },
+        ],
+        siteName: 'CC | Currency Converter',
+    },
 };
 
 const inter = Karla({ subsets: ['latin'] });
